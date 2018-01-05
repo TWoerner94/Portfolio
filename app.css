@@ -92,7 +92,16 @@ header div.caption h4 {
 
 .home-content {
   position: absolute;
-  margin-top: 150px;
+  margin-top: 350px;
+  opacity: 0;
+  animation: 1s slidein forwards;
+}
+
+@keyframes slidein {
+  100% {
+    margin-top: 150px;
+    opacity: 1;
+  }
 }
 
 .home .background-image {

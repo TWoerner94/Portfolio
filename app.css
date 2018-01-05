@@ -94,7 +94,15 @@ header div.caption h4 {
   position: absolute;
   margin-top: 350px;
   opacity: 0;
-  animation: 1s slidein forwards;
+  -webkit-animation: 1s slidein forwards;
+          animation: 1s slidein forwards;
+}
+
+@-webkit-keyframes slidein {
+  100% {
+    margin-top: 150px;
+    opacity: 1;
+  }
 }
 
 @keyframes slidein {

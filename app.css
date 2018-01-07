@@ -1,3 +1,5 @@
+/* red = rgb(176, 26, 31) */
+
 /* General Styles */
 
 * {
@@ -8,7 +10,8 @@
   font-family: 'Open Sans', sans-serif;
 }
 
-nav, ul {
+nav, 
+ul {
   list-style: none;
   z-index: 1;
 }
@@ -133,6 +136,7 @@ header div.caption h4 {
 
 .home-content {
   position: absolute;
+  width: 100%;
   margin-top: 150px;
   opacity: 0;
   -webkit-animation: 1s slidein forwards;
@@ -167,7 +171,7 @@ header div.caption h4 {
 .home h1 {
   font-size: 54px;
   font-weight: 700;
-  margin-bottom: 50px;
+  margin: 0 80px 50px;
 }
 
 .home p {
@@ -183,7 +187,7 @@ header div.caption h4 {
 }
 
 
-/* About Section */
+/* About Styles */
 
 .about .grid li {
   padding: 40px;
@@ -219,8 +223,8 @@ header div.caption h4 {
 
 .about .portrait {
   position: relative;
-  flex-basis: 17%;
-  height: 280px;
+  flex-basis: 14%;
+  height: 220px;
   border-radius: 1%;
 }
 

@@ -32,7 +32,8 @@ section {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  padding: 80px 60px;
+  padding: 60px 50px;
+  min-height: 100vh;
 }
 
 section h3.title {
@@ -40,6 +41,10 @@ section h3.title {
   font: bold 32px 'Open Sans', sans-serif;
   padding: 20px;
   text-align: center;
+}
+
+section h4 {
+  color: rgb(176, 26, 31);
 }
 
 section p {
@@ -54,11 +59,24 @@ section:not(.home):nth-child(odd) {
   background-color: #f5f5f5;
 }
 
+hr {
+  width: 450px;
+  height: 3px;
+  background-color: rgb(176, 26, 31);
+  border: 0;
+  margin-bottom: 40px;
+}
+
 .grid {
   width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 
 
@@ -129,7 +147,6 @@ header div.caption h4 {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  min-height: 100vh;
   text-align: center;
   color: #fff;
 }
@@ -189,50 +206,92 @@ header div.caption h4 {
 
 /* About Styles */
 
-.about .grid li {
-  padding: 40px;
-  flex-basis: 25%;
+#about .grid li {
+  padding: 40px 20px 20px;
+  -ms-flex-preferred-size: 25%;
+      flex-basis: 25%;
   text-align: center;
 }
 
-.about .grid li img {
-  width: 64px;
-}
-
-.about .grid h4 {
+#about .grid h4 {
   margin: 15px 0;
   color: rgb(176, 26, 31);
   font-weight: 800;
   font-size: 1.8em;
 }
 
-.about .about-header {
+#about .about-header {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-direction: row;
-  justify-content: space-around;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
   width: 100%;
 }
 
-.about .about-caption {
+#about .about-caption {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: flex-start;
-  flex-basis: 70%;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  -ms-flex-preferred-size: 60%;
+      flex-basis: 60%;
 }
 
-.about .portrait {
+#about .portrait {
   position: relative;
-  flex-basis: 14%;
+  -ms-flex-preferred-size: 12%;
+      flex-basis: 12%;
   height: 220px;
+  margin: 0 42px;
   border-radius: 1%;
 }
 
-.about .about-header p {
+#about .about-header p {
   font-size: 20px;
   text-align: left;
 }
 
-.about p {
+#about p {
   font-size: 1.1em;
+}
+
+
+/* Projects Styles */
+
+#projects .grid li {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -ms-flex-preferred-size: 30%;
+      flex-basis: 30%;
+  text-align: center;
+}
+
+#projects .thumbnail-img {
+  max-width: 100%;
+  max-height: 100%;
+  min-height: 235px;
+  padding-bottom: 15px;
 }

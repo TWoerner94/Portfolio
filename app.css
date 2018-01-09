@@ -18,18 +18,13 @@ ul {
 a {
   text-decoration: none;
   color: #fff;
+  margin: 0;
+  padding: 0;
 }
 
 section {
   padding: 60px 50px;
   height: 100vh;
-}
-
-section h3.title {
-  text-transform: uppercase;
-  font: bold 32px 'Open Sans', sans-serif;
-  padding: 20px;
-  text-align: center;
 }
 
 section h4 {
@@ -45,6 +40,13 @@ section p {
 
 section:not(.home):nth-child(odd) {
   background-color: #f5f5f5;
+}
+
+h3.title {
+  text-transform: uppercase;
+  font: bold 32px 'Open Sans', sans-serif;
+  padding: 20px;
+  text-align: center;
 }
 
 hr {
@@ -299,6 +301,37 @@ header div.caption h4 {
 #projects .thumbnail-img {
   max-width: 100%;
   max-height: 100%;
-  min-height: 235px;
+  height: 235px;
   padding: 0 30px 25px;
+}
+
+
+/* Contact Styles */
+
+#contact {
+  position: relative;
+  overflow: hidden;
+  padding: 40px;
+/*  background: url(https://cdn.pixabay.com/photo/2015/01/08/18/25/startup-593327_960_720.jpg) no-repeat center center fixed;
+  background-size: cover;*/
+}
+
+#contact ul {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+#contact i.fa {
+  padding: 0 30px;
+}
+
+#contact .background-image {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: auto;
+  opacity: 0.7;
+  z-index: -1;
 }

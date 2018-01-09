@@ -26,7 +26,7 @@
   </ul>
 </header>
 
-<section class='home'>
+<section id='home'>
   <div class='background-image' style='background-image: url(https://images.unsplash.com/photo-1508830524289-0adcbe822b40?auto=format&fit=crop&w=1422&q=80)'></div>
   <div class='home-content'>
     <h1>Hi. I'm Tim Wörner, aspiring Web Developer.</h1>
@@ -36,54 +36,56 @@
 
 <section id='about'>
   <div class='about-header'>
-    <img src='https://i.imgur.com/Dib0b21.jpg' class='portrait'>
+    <img src='https://i.imgur.com/Dib0b21.jpg' class='portrait' alt='Picture of me'>
     <div class='about-caption'>
       <h3 class='title'>About Me: </h3>
-      <hr>
+      <hr class='hr-left'>
       <p>I have been studying Web Development for about one and a half years. During that time, I gained experiences with the following technologies: </p>
     </div>
   </div>
-  <ul class='grid'>
-    <li>
-      <i class='fa fa-html5 fa-4x'></i>
-      <h4>HTML5</h4>
-    </li>
-    <li>
-      <i class='fa fa-css3 fa-4x'></i>
-      <h4>CSS3</h4>
-      <p>Bootstrap, Semantic UI</p>
-    </li>
-    <li>
-      <i class='fa icon-javascript fa-4x'></i>
-      <h4>Javascript</h4>
-      <p>Angular 4, JQuery, React, Redux, Node.js, Express, ES6</p>
-    </li>
-    <li>
-      <i class='fa fa-database fa-4x'></i>
-      <h4>MongoDB</h4>
-      <p>Mongoose</p>
-    </li>
-  </ul>
+  <div class='list'>
+    <ul class='grid'>
+      <li>
+        <i class='fa fa-html5 fa-4x'></i>
+        <h4>HTML5</h4>
+      </li>
+      <li>
+        <i class='fa fa-css3 fa-4x'></i>
+        <h4>CSS3</h4>
+        <p>Bootstrap, Semantic UI</p>
+      </li>
+      <li>
+        <i class='fa icon-javascript fa-4x'></i>
+        <h4>Javascript</h4>
+        <p>Angular 4, JQuery, React, Redux, Node.js, Express, ES6</p>
+      </li>
+      <li>
+        <i class='fa fa-database fa-4x'></i>
+        <h4>MongoDB</h4>
+        <p>Mongoose</p>
+      </li>
+    </ul>
+  </div>
 </section>
 
 <section id='projects'>
   <h3 class='title'>Some of my projects: </h3>
   <hr>
-  <div class='project-list'>
+  <div class='list'>
     <ul class='grid'>
       <li>
-        <img class='thumbnail-img' src='https://i.imgur.com/MUhJT2j.jpg'>
+        <img class='thumbnail-img' src='https://i.imgur.com/MUhJT2j.jpg' alt='"Heroes of Greek Mythology" Thumbnail'>
         <h4>Heroes of Greek Mythology</h4>
         <p>A list of figures from Greek Mythology. Built with node.js and Express. The entries are stored in a MongoDB database using RESTful routing. Designed using Semantic UI.</p>
       </li>
       <li>
-        <img class='thumbnail-img' src='https://s3-us-west-2.amazonaws.com/i.cdpn.io/1064909.MomLrQ.4e1a1077-a7b3-4202-acd9-9c32c4965ff8.png'>
+        <img class='thumbnail-img' src='https://s3-us-west-2.amazonaws.com/i.cdpn.io/1064909.MomLrQ.4e1a1077-a7b3-4202-acd9-9c32c4965ff8.png' alt='"Javascript Calculator" Thumbnail'>
         <h4>Javascript Calculator</h4>
         <p>A simple calculator. Built with JQuery, designed with Bootstrap.</p>
       </li>
       <li>
-        <img class='thumbnail-img' src='https://s3-us-west-2.amazonaws.com/i.cdpn.io/1064909.RVQxLe.45734c85-82f5-481a-80ac-1139c6ff2717.png'>
-        <h4>Wikipedia viewer</h4>
+        <img class='thumbnail-img' src='https://s3-us-west-2.amazonaws.com/i.cdpn.io/1064909.RVQxLe.45734c85-82f5-481a-80ac-1139c6ff2717.png' alt='"Wikipedia Viewer" Thumbnail'>
+        <h4>Wikipedia viewer</h4>      
         <p>I used the mediawiki API for this website. It lists 10 search results plus a small snippet (the first one or two sentences of the article).</p>
       </li>
     </ul>

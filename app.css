@@ -21,18 +21,8 @@ a {
 }
 
 section {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-    -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
   padding: 60px 50px;
-  min-height: 100vh;
+  height: 100vh;
 }
 
 section h3.title {
@@ -60,7 +50,7 @@ section:not(.home):nth-child(odd) {
 hr {
   width: 450px;
   height: 3px;
-  margin: 0 20px;
+  margin: 0 auto;
   background-color: rgb(176, 26, 31);
   border: 0;
   margin-bottom: 40px;
@@ -76,6 +66,11 @@ hr {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+}
+
+.list {
+  width: 100%;
+  margin-top: 25px;
 }
 
 
@@ -141,7 +136,7 @@ header div.caption h4 {
 
 /* Home Styles */
 
-.home {
+#home {
   position: relative;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
@@ -153,27 +148,28 @@ header div.caption h4 {
 .home-content {
   position: absolute;
   width: 100%;
-  margin-top: 150px;
+  transform: translateY(50%);
+  left: 0;
   opacity: 0;
-  -webkit-animation: 1s slidein forwards;
-          animation: 1s slidein forwards;
+  -webkit-animation: 1s slidein ease forwards;
+          animation: 1s slidein ease forwards;
 }
 
 @-webkit-keyframes slidein {
   100% {
-    margin-top: 0;
+    transform: translateY(35%);
     opacity: 1;
   }
 }
 
 @keyframes slidein {
   100% {
-    margin-top: 0;
+    transform: translateY(35%);
     opacity: 1;
   }
 }
 
-.home .background-image {
+#home .background-image {
   position: absolute;
   top: 0;
   left: 0;
@@ -184,13 +180,13 @@ header div.caption h4 {
   z-index: -1;
 }
 
-.home h1 {
+#home h1 {
   font-size: 54px;
   font-weight: 700;
   margin: 0 80px 50px;
 }
 
-.home p {
+#home p {
   margin: 0 200px;
   padding: 16px;
   color: #eee;
@@ -206,10 +202,17 @@ header div.caption h4 {
 /* About Styles */
 
 #about .grid li {
-  padding: 40px 20px 20px;
-  -ms-flex-preferred-size: 25%;
-      flex-basis: 25%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -ms-flex-preferred-size: 22%;
+      flex-basis: 22%;
   text-align: center;
+  padding: 0 10px;
 }
 
 #about .grid h4 {
@@ -270,6 +273,11 @@ header div.caption h4 {
 
 #about p {
   font-size: 1.1em;
+  width: 100%;
+}
+
+#about .hr-left {
+  margin-left: 20px;
 }
 
 

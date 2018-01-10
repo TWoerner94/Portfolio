@@ -131,7 +131,7 @@ header div.caption i.fa-code {
 }
 
 header div.caption h4 {
-  font-family: 'Share Tech Mono';
+  font-family: 'Share Tech Mono', 'Lucida Console', monaco, monospace;
   color: rgb(176, 26, 31);
 }
 
@@ -150,7 +150,9 @@ header div.caption h4 {
 .home-content {
   position: absolute;
   width: 100%;
-  transform: translateY(50%);
+  -webkit-transform: translateY(50%);
+      -ms-transform: translateY(50%);
+          transform: translateY(50%);
   left: 0;
   opacity: 0;
   -webkit-animation: 1s slidein ease forwards;
@@ -159,14 +161,16 @@ header div.caption h4 {
 
 @-webkit-keyframes slidein {
   100% {
-    transform: translateY(35%);
+    -webkit-transform: translateY(35%);
+            transform: translateY(35%);
     opacity: 1;
   }
 }
 
 @keyframes slidein {
   100% {
-    transform: translateY(35%);
+    -webkit-transform: translateY(35%);
+            transform: translateY(35%);
     opacity: 1;
   }
 }
@@ -311,19 +315,33 @@ header div.caption h4 {
 #contact {
   position: relative;
   overflow: hidden;
-  padding: 40px;
-/*  background: url(https://cdn.pixabay.com/photo/2015/01/08/18/25/startup-593327_960_720.jpg) no-repeat center center fixed;
-  background-size: cover;*/
+  padding: 20px 0 30px;
+  color: white;
 }
 
 #contact ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-direction: row;
-  justify-content: center;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 
 #contact i.fa {
-  padding: 0 30px;
+  margin: 0 30px;
+  opacity: 0.6;
+  -webkit-transition: opacity .5s;
+  -o-transition: opacity .5s;
+  transition: opacity .5s;
+}
+
+#contact i.fa:hover {
+  opacity: 1;
 }
 
 #contact .background-image {
@@ -332,6 +350,6 @@ header div.caption h4 {
   left: 0;
   width: 100%;
   height: auto;
-  opacity: 0.7;
+  opacity: 0.9;
   z-index: -1;
 }

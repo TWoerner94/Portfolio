@@ -403,6 +403,14 @@ header div.caption h4 {
   max-width: 35vw;
 }
 
+@media (max-width: 1050px) {
+  #about .grid li {
+    -ms-flex-preferred-size: 48%;
+        flex-basis: 48%;
+    padding: 0;
+  }
+}
+
 @media (max-width: 900px) {
   #about .portrait {
     height: 157px;
@@ -420,12 +428,6 @@ header div.caption h4 {
 }
 
 @media (max-width: 645px) {
-  #about .grid li {
-    -ms-flex-preferred-size: 48%;
-        flex-basis: 48%;
-    padding: 0;
-  }
-
   #about .grid h4 {
     margin: 5px 0;
     font-size: 3.4vh;

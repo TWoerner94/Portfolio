@@ -143,15 +143,29 @@ header div.caption h4 {
 
 @media (max-width: 620px) {
   header {
-    flex-direction: column;
-    justify-content: flex-start;
-    align-items: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
   }
 
   header ul {
-    flex-direction: column;
-    justify-content: flex-start;
-    align-items: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
   }
 
   header ul li {
@@ -236,7 +250,8 @@ header div.caption h4 {
 
 @media (max-width: 1170px) {
   .home-content {
-    animation: none;
+    -webkit-animation: none;
+            animation: none;
       -webkit-transform: translateY(100px);
       -ms-transform: translateY(100px);
           transform: translateY(100px);
@@ -391,7 +406,8 @@ header div.caption h4 {
 @media (max-width: 900px) {
   #about .portrait {
     height: 157px;
-    flex-basis: 9%;
+    -ms-flex-preferred-size: 9%;
+        flex-basis: 9%;
   }
 
   #about .about-header p {
@@ -405,7 +421,8 @@ header div.caption h4 {
 
 @media (max-width: 645px) {
   #about .grid li {
-    flex-basis: 48%;
+    -ms-flex-preferred-size: 48%;
+        flex-basis: 48%;
     padding: 0;
   }
 
@@ -426,11 +443,16 @@ header div.caption h4 {
 
 @media (max-width: 480px) {
   #about .about-header {
-    flex-direction: column;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
   }
 
   #about .about-caption {
-    align-items: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
   }
 
   #about .about-header p {
@@ -439,7 +461,8 @@ header div.caption h4 {
 
   #about .portrait {
     height: 105px;
-    flex-basis: 6%;
+    -ms-flex-preferred-size: 6%;
+        flex-basis: 6%;
   }
 
   #about .hr-left {
@@ -465,7 +488,8 @@ header div.caption h4 {
 
   #about .portrait {
     height: 79px;
-    flex-basis: 4.5%;
+    -ms-flex-preferred-size: 4.5%;
+        flex-basis: 4.5%;
   }
 
   #about .grid h4 {

@@ -227,7 +227,7 @@ header div.caption h4 {
   padding: 16px;
   color: #eee;
   font-size: 4.6vh;
-  line-height: 50px;
+  line-height: 7vh;
   background: grey;
   background: rgba(0, 0, 0, 0.4);
   color: white;
@@ -253,13 +253,13 @@ header div.caption h4 {
 }
 
 @media (max-width: 910px) {
-  .home-content {
+/*  .home-content {
     animation: none;
       -webkit-transform: translateY(90px);
       -ms-transform: translateY(90px);
           transform: translateY(90px);
     opacity: 1;
-  }
+  }*/
 
   #home h1 {
     font-size: 7.2vh;
@@ -272,13 +272,13 @@ header div.caption h4 {
 }
 
 @media (max-width: 720px) {
-  .home-content {
+/*  .home-content {
     animation: none;
       -webkit-transform: translateY(80px);
       -ms-transform: translateY(80px);
           transform: translateY(80px);
     opacity: 1;
-  }
+  }*/
 
   #home h1 {
     font-size: 6.6vh;
@@ -304,7 +304,7 @@ header div.caption h4 {
 
   #home p {
     font-size: 3vh;
-    line-height: 35px;
+    line-height: 5vh;
     margin: 0 20px;
   }
 }
@@ -317,7 +317,7 @@ header div.caption h4 {
 
   #home p {
     font-size: 2.7vh;
-    line-height: 28px
+    line-height: 3.8vh;
   }
 }
 

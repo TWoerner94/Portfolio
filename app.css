@@ -180,9 +180,9 @@ header div.caption h4 {
 .home-content {
   position: absolute;
   width: 100%;
-  -webkit-transform: translateY(50%);
-      -ms-transform: translateY(50%);
-          transform: translateY(50%);
+  -webkit-transform: translateY(160px);
+      -ms-transform: translateY(160px);
+          transform: translateY(160px);
   left: 0;
   opacity: 0;
   -webkit-animation: 1s slidein ease forwards;
@@ -191,16 +191,16 @@ header div.caption h4 {
 
 @-webkit-keyframes slidein {
   100% {
-    -webkit-transform: translateY(140px);
-            transform: translateY(140px);
+    -webkit-transform: translateY(130px);
+            transform: translateY(130px);
     opacity: 1;
   }
 }
 
 @keyframes slidein {
   100% {
-    -webkit-transform: translateY(140px);
-            transform: translateY(140px);
+    -webkit-transform: translateY(130px);
+            transform: translateY(130px);
     opacity: 1;
   }
 }
@@ -217,16 +217,16 @@ header div.caption h4 {
 }
 
 #home h1 {
-  font-size: 54px;
+  font-size: 9vh;
   font-weight: 700;
-  margin: 0 80px 50px;
+  margin: 0 70px 50px;
 }
 
 #home p {
   margin: 0 200px;
   padding: 16px;
   color: #eee;
-  font-size: 32px;
+  font-size: 5vh;
   line-height: 50px;
   background: grey;
   background: rgba(0, 0, 0, 0.4);
@@ -301,7 +301,7 @@ header div.caption h4 {
   }
 }
 
-@media (max-width: 470px) {
+@media (max-width: 400px) {
   #home h1 {
     font-size: 27px;
     margin: 0 10px 8px;

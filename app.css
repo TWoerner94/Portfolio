@@ -24,7 +24,7 @@ a {
 
 section {
   padding: 60px 50px;
-  height: 100vh;
+  min-height: 100vh;
 }
 
 section h4 {
@@ -368,7 +368,7 @@ header div.caption h4 {
   position: relative;
   -ms-flex-preferred-size: 12%;
       flex-basis: 12%;
-  height: 220px;
+  max-height: 220px;
   margin: 0 42px;
   border-radius: 1%;
 }

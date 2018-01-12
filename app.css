@@ -226,7 +226,7 @@ header div.caption h4 {
   margin: 0 200px;
   padding: 16px;
   color: #eee;
-  font-size: 5vh;
+  font-size: 4.6vh;
   line-height: 50px;
   background: grey;
   background: rgba(0, 0, 0, 0.4);
@@ -242,6 +242,14 @@ header div.caption h4 {
           transform: translateY(100px);
     opacity: 1;
   }
+
+  #home h1 {
+    font-size: 8vh;
+  }
+
+  #home p {
+    font-size: 4.2vh;
+  }
 }
 
 @media (max-width: 910px) {
@@ -254,11 +262,11 @@ header div.caption h4 {
   }
 
   #home h1 {
-    font-size: 44px;
+    font-size: 7.2vh;
   }
 
   #home p {
-    font-size: 26px;
+    font-size: 3.8vh;
     margin: 0 100px;
   }
 }
@@ -273,29 +281,29 @@ header div.caption h4 {
   }
 
   #home h1 {
-    font-size: 38px;
+    font-size: 6.6vh;
     margin: 0 40px 30px;
   }
 
   #home p {
-    font-size: 22px;
+    font-size: 3.2vh;
   }
 }
 
 @media (max-width: 620px) {
   .home-content {
-    -webkit-transform: translateY(180px);
-    -ms-transform: translateY(180px);
-        transform: translateY(180px);
+    -webkit-transform: translateY(170px);
+    -ms-transform: translateY(170px);
+        transform: translateY(170px);
   }
 
   #home h1 {
-    font-size: 34px;
+    font-size: 6.3vh;
     margin: 0 20px 16px;
   }
 
   #home p {
-    font-size: 20px;
+    font-size: 3vh;
     line-height: 35px;
     margin: 0 20px;
   }
@@ -303,12 +311,12 @@ header div.caption h4 {
 
 @media (max-width: 400px) {
   #home h1 {
-    font-size: 27px;
+    font-size: 5.5vh;
     margin: 0 10px 8px;
   }
 
   #home p {
-    font-size: 18px;
+    font-size: 2.7vh;
     line-height: 28px
   }
 }

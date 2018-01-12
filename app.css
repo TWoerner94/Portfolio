@@ -302,14 +302,8 @@ header div.caption h4 {
 }
 
 @media (max-width: 470px) {
-  .home-content {
-    -webkit-transform: translateY(165px);
-    -ms-transform: translateY(165px);
-        transform: translateY(165px);
-  }
-
   #home h1 {
-    font-size: 28px;
+    font-size: 27px;
     margin: 0 10px 8px;
   }
 

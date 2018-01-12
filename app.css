@@ -182,6 +182,7 @@ header .caption h4 {
 @media (max-width: 330px) {
   header ul li {
     margin: 5px 0;
+    font-size: 4.5vh;
   }
 }
 
@@ -604,6 +605,6 @@ header .caption h4 {
 
 @media (max-width: 400px) {
   #contact i.fa {
-    font-size: 15vw;
+    font-size: 13vw;
   }
 }

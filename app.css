@@ -525,7 +525,8 @@ header div.caption h4 {
 
 @media (max-width: 900px) {
   #projects .grid li {
-    flex-basis: 100%;
+    -ms-flex-preferred-size: 100%;
+        flex-basis: 100%;
   }
 
   #projects .thumbnail-img {
@@ -582,4 +583,20 @@ header div.caption h4 {
   height: auto;
   opacity: 0.9;
   z-index: -1;
+}
+
+@media (max-width: 500px) {
+  #contact {
+    padding: 10px 0 15px;
+  }
+
+  #contact i.fa {
+    margin: 0 15px;
+  }
+}
+
+@media (max-width: 400px) {
+  #contact i.fa {
+    font-size: 15vw;
+  }
 }

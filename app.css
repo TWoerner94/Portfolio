@@ -50,7 +50,7 @@ h3.title {
 }
 
 hr {
-  width: 450px;
+  max-width: 35vw;
   height: 3px;
   margin: 0 auto;
   background-color: rgb(176, 26, 31);
@@ -400,7 +400,6 @@ header div.caption h4 {
 
 #about .hr-left {
   margin-left: 20px;
-  max-width: 35vw;
 }
 
 @media (max-width: 1050px) {

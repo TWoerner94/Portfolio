@@ -44,7 +44,7 @@ section:not(.home):nth-child(odd) {
 
 h3.title {
   text-transform: uppercase;
-  font: bold 32px 'Open Sans', sans-serif;
+  font: bold 4.8vh 'Open Sans', sans-serif;
   padding: 20px;
   text-align: center;
 }
@@ -75,7 +75,7 @@ hr {
   margin-top: 25px;
 }
 
-@media (max-width: 700px) {
+@media (max-width: 960px) {
   section {
     padding: 30px 20px;
   }
@@ -253,14 +253,6 @@ header div.caption h4 {
 }
 
 @media (max-width: 910px) {
-/*  .home-content {
-    animation: none;
-      -webkit-transform: translateY(90px);
-      -ms-transform: translateY(90px);
-          transform: translateY(90px);
-    opacity: 1;
-  }*/
-
   #home h1 {
     font-size: 7.2vh;
   }
@@ -272,14 +264,6 @@ header div.caption h4 {
 }
 
 @media (max-width: 720px) {
-/*  .home-content {
-    animation: none;
-      -webkit-transform: translateY(80px);
-      -ms-transform: translateY(80px);
-          transform: translateY(80px);
-    opacity: 1;
-  }*/
-
   #home h1 {
     font-size: 6.6vh;
     margin: 0 40px 30px;
@@ -342,7 +326,7 @@ header div.caption h4 {
   margin: 15px 0;
   color: rgb(176, 26, 31);
   font-weight: 800;
-  font-size: 1.8em;
+  font-size: 4.4vh;
 }
 
 #about .about-header {
@@ -356,9 +340,9 @@ header div.caption h4 {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  -webkit-box-align: end;
-      -ms-flex-align: end;
-          align-items: flex-end;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   width: 100%;
 }
 
@@ -390,18 +374,105 @@ header div.caption h4 {
 }
 
 #about .about-header p {
-  font-size: 20px;
+  font-size: 3.3vh;
   text-align: left;
 }
 
 #about p {
-  font-size: 1.1em;
+  font-size: 2.8vh;
   width: 100%;
 }
 
 #about .hr-left {
   margin-left: 20px;
+  max-width: 35vw;
 }
+
+@media (max-width: 900px) {
+  #about .portrait {
+    height: 157px;
+    flex-basis: 9%;
+  }
+
+  #about .about-header p {
+    font-size: 2.5vh;
+  }
+
+  #about .about-header h3.title {
+    font-size: 3.6vh;
+  }
+}
+
+@media (max-width: 645px) {
+  #about .grid li {
+    flex-basis: 48%;
+    padding: 0;
+  }
+
+  #about .grid h4 {
+    margin: 5px 0;
+    font-size: 3.4vh;
+  }
+
+  #about .grid p {
+    font-size: 2vh;
+    margin-bottom: 12px;
+  }
+
+  #about .grid i.fa {
+    font-size: 5vh;
+  }
+}
+
+@media (max-width: 480px) {
+  #about .about-header {
+    flex-direction: column;
+  }
+
+  #about .about-caption {
+    align-items: center;
+  }
+
+  #about .about-header p {
+    text-align: center;
+  }
+
+  #about .portrait {
+    height: 105px;
+    flex-basis: 6%;
+  }
+
+  #about .hr-left {
+    margin: 0 auto 5px;
+  }
+
+  #about .about-header h3.title {
+    padding: 8px;
+    font-size: 3.2vh;
+  }
+
+  #about .grid p {
+    font-size: 1.8vh;
+    margin-bottom: 10px;
+  }
+}
+
+@media (max-width: 385px) {
+  #about .about-header p {
+    font-size: 2.5vh;
+    margin-bottom: 0;
+  }
+
+  #about .portrait {
+    height: 79px;
+    flex-basis: 4.5%;
+  }
+
+  #about .grid h4 {
+    font-size: 2.8vh;
+    margin: 0;
+  }
+} 
 
 
 /* Projects Styles */

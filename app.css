@@ -129,6 +129,7 @@ header .caption {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  max-height: 100%;
 }
 
 header .caption i.fa-code {
@@ -441,7 +442,7 @@ header .caption h4 {
   }
 
   #about .grid p {
-    font-size: 2vh;
+    font-size: 2.6vh;
     margin-bottom: 12px;
   }
 
@@ -484,7 +485,7 @@ header .caption h4 {
   }
 
   #about .grid p {
-    font-size: 1.8vh;
+    font-size: 2.2vh;
     margin-bottom: 10px;
   }
 }
